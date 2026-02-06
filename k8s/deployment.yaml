@@ -6,15 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test
+      app: test-app
   template:
     metadata:
       labels:
-        app: test
+        app: test-app
     spec:
       containers:
-        - name: test
-          image: test-app
-          imagePullPolicy: Never
+        - name: test-app
+          image: mad855/test-app:v1
           ports:
             - containerPort: 3000
