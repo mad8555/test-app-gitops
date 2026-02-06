@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: test-app
-          image: mad855/test-app:IMAGE_TAG
+          image: mad855/test-app:4e0c17e3377c5c5dda416d13f1a22f1fbb119c41
           ports:
             - containerPort: 3000
